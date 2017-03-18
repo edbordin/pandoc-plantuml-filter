@@ -25,7 +25,7 @@ function filterPlantuml(type, value, format, meta) {
         fs.mkdirSync(tempDirName);
     }
 
-    var fileName = util.format("%d.png", imgCounter);
+    var fileName = util.format("%d.png", imgCounter++);
     var filePath = path.join(tempDirName, fileName);
     fs.writeFileSync(filePath, res);
 

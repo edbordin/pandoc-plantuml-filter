@@ -19,7 +19,7 @@ function filterPlantuml(type, value, format, meta) {
     var umlText = value[1];
 
     var plantumlPath = path.join(__dirname, "plantuml.8036.jar");
-    var res = execSync(util.format("java -jar \"%s\" -charset UTF-8 -pipe", plantumlPath), { input: umlText });
+    var res = execSync(util.format("java -splash:no -jar \"%s\" -charset UTF-8 -pipe", plantumlPath), { input: umlText });
     var tempDirName = ".temp";
     if (!fs.existsSync(tempDirName)) {
         fs.mkdirSync(tempDirName);

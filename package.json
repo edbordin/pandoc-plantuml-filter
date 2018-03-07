@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "pandoc-filter": "^0.1.3",
-    "crypto" : "*",
+    "crypto" : "*"
   },
   "bin": {
     "pandoc-plantuml-filter": "plantuml-filter-bin"
